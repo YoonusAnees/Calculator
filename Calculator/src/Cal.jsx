@@ -44,7 +44,7 @@ function Cal() {
 
                         <button onClick={() => handleClick('/')}  className='bg-[#171314] p-6  inset-shadow-sm inset-shadow-zinc-500 rounded-2xl hover:inset-shadow-red-500 hover:-translate-1  flex items-center justify-center text-amber-50 text-2xl'><FaDivide /></button>
 
-                        <button onClick={handleClickClear}  className='bg-[#171314] p-6  inset-shadow-sm inset-shadow-zinc-500 rounded-2xl hover:inset-shadow-red-500 hover:-translate-1  flex items-center justify-center text-amber-50 text-2xl'><FaBackspace /></button>
+                        <button  onClick={() => setInput(input.slice(0, -1))}  className='bg-[#171314] p-6  inset-shadow-sm inset-shadow-zinc-500 rounded-2xl hover:inset-shadow-red-500 hover:-translate-1  flex items-center justify-center text-amber-50 text-2xl'><FaBackspace /></button>
 
                         <button onClick={() => handleClick('7')}  className='bg-[#bf0000] p-6  inset-shadow-sm inset-shadow-zinc-800 rounded-2xl  hover:inset-shadow-red-500 hover:-translate-1 flex items-center justify-center text-amber-50 text-2xl font-bold'>7</button>
 
